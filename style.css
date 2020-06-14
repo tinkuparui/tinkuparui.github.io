@@ -21,6 +21,7 @@ body,html{
     position: fixed;
     width: 100%;
     z-index: 10;
+    padding: 5px;
 }
 
 #logo{
