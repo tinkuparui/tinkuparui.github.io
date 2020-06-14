@@ -25,3 +25,7 @@ function shownav() {
 function redirecthome() {
     window.location.href = "index.html";
 }
+
+function movetocontact() {
+    window.location.href = "contact.html";
+}
