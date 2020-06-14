@@ -58,7 +58,7 @@ nav{
     width: 50px;
     height: 100%;
     position: fixed;
-    font-family: cursive;
+    font-family: Helvetica,Arial,sans-serif;
     background-color: #101010;
 }
 
@@ -210,7 +210,7 @@ div.para{
 }
 
 #tpstyle{
-    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Sedgwick Ave Display';
     font-size: 450px;
     position: absolute;
     right: 334px;
