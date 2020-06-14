@@ -21,14 +21,13 @@ body,html{
     position: fixed;
     width: 100%;
     z-index: 10;
-    padding: 5px;
 }
 
 #logo{
     flex:98%;
     font-family: 'Metal Mania', cursive;
     letter-spacing: 6px;
-    color: rgb(182, 245, 235);
+    color: rgb(8, 253, 216);
     text-shadow: 1px 1px #ff6666;
     background-color: transparent;
     animation-name: zoom1;
@@ -59,7 +58,7 @@ nav{
     width: 50px;
     height: 100%;
     position: fixed;
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: cursive;
     background-color: #101010;
 }
 
@@ -254,51 +253,30 @@ div.myimage{
     }
 }
 
-div.form{
+div.contact{
     position: absolute;
-    left: 114px;
-    top: 217px;
+    left: 106px;
+    top: 225px;
+}
+
+.contact > div{
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #494949;
+    border-radius: 5px;
+}
+
+.ciconsize{
+    font-size: 35px;
+    padding: 5px 0;
+    color: #ff6666;
+}
+
+.cspanstyle{
+    font-size: 20px;
     color: white;
 }
 
-input{
-    width: 400px;
-    outline: none;
-    border: none;
-    font-size: 17px;
-    padding: 14px;
-    margin: 5px 0px 5px 0;
-    background-color: #404040;
-}
-
-textarea{
-    outline: none;
-    border: none;
-    font-size: 17px;
-    padding: 14px;
-    background-color: #404040;
-    margin-top: 5px;
-    width: 400px;
-    height: 144px;
-    resize: none;
-}
-
-.cbtn{
-    float: right;
-    background-color: transparent;
-    font-size: 17px;
-    padding: 5px 15px;
-    letter-spacing: 4px;
-    text-decoration: none;
-    border: 1px solid rgb(8, 253, 216);
-    color: rgb(8, 253, 216);
-}
-
-.cbtn:hover{
-    background-color: rgb(8, 253, 216);
-    cursor: pointer;
-    color: black;
-}
 
 .progress{
     width: 70%;
@@ -515,19 +493,11 @@ textarea{
     }
 
 /* Contact us --------------------------------------------------*/
-    div.form{
-        left: 30px;
-        top: 240px;
-        width: 86%;
-    }
-    
-    input{
-        width: 100%;
-    }
-    
-    textarea{
-        width: 100%;
-    }
+div.contact{
+    position: absolute;
+    left: 31px;
+    top: 247px;
+}
     /* contact us end ------------------------------------------*/
     
     /* My work -------------------------------------------------*/
@@ -564,7 +534,7 @@ textarea{
 
 @media only screen and (max-width: 409px) and (min-width:360px){
     #logo h1{
-        font-size: 26px;
+        font-size: 30px;
     }
 
     #menubar{
@@ -661,19 +631,11 @@ textarea{
     }
 
 /* Contact us --------------------------------------------------*/
-    div.form{
-        left: 18px;
-        top: 218px;
-        width: 90%;
-    }
-    
-    input{
-        width: 100%;
-    }
-    
-    textarea{
-        width: 100%;
-    }
+div.contact{
+    position: absolute;
+    left: 20px;
+    top: 225px;
+}
     /* contact us end ------------------------------------------*/
     
     /* My work -------------------------------------------------*/
@@ -804,19 +766,11 @@ textarea{
     }
 
 /* Contact us --------------------------------------------------*/
-    div.form{
-        left: 14px;
-        top: 173px;
-        width: 90%;
-    }
-    
-    input{
-        width: 100%;
-    }
-    
-    textarea{
-        width: 100%;
-    }
+div.contact{
+    position: absolute;
+    left: 20px;
+    top: 172px;
+}
     /* contact us end ------------------------------------------*/
     
     /* My work -------------------------------------------------*/
@@ -948,20 +902,11 @@ textarea{
     }
 
 /* Contact us --------------------------------------------------*/
-    div.form{
-        left: 14px;
-        top: 173px;
-        width: 90%;
-    }
-    
-    input{
-        width: 100%;
-        height: 36px;
-    }
-    
-    textarea{
-        width: 100%;
-    }
+div.contact{
+    position: absolute;
+    left: 20px;
+    top: 225px;
+}
     /* contact us end ------------------------------------------*/
     
     /* My work -------------------------------------------------*/
@@ -1098,19 +1043,11 @@ textarea{
     }
 
 /* Contact us --------------------------------------------------*/
-    div.form{
-        left: 30px;
-        top: 277px;
-        width: 86%;
-    }
-    
-    input{
-        width: 100%;
-    }
-    
-    textarea{
-        width: 100%;
-    }
+div.contact{
+    position: absolute;
+    left: 30px;
+    top: 270px;
+}
     /* contact us end ------------------------------------------*/
     
     /* My work -------------------------------------------------*/
