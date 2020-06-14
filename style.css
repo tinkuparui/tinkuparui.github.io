@@ -1,0 +1,1146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flexi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+}
+
+#header{
+    background-color: #101010;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+#logo{
+    flex:98%;
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 6px;
+    color: rgb(182, 245, 235);
+    text-shadow: 1px 1px #ff6666;
+    background-color: transparent;
+    animation-name: zoom1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    text-align: center;
+}
+
+@keyframes zoom1{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
+
+#menubar{
+    flex: 2%;
+    color: white;
+    font-size: 25px;
+    text-align: right;
+    padding-right: 5px;
+    display: none;
+}
+
+nav{
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    font-family: cursive;
+    background-color: #101010;
+}
+
+#navbar{
+    flex-direction: column;
+}
+
+#navbar a{
+    display: block;
+    padding: 15px;
+    color: rgb(8, 253, 216);
+    text-decoration: none;
+}
+
+#navbar a span{
+    font-size: 9px;
+}
+
+.active{
+    color:#ff6666;
+}
+
+.data{
+    position: absolute;
+    top: 160px;
+    left: 110px;
+    font-size: 37px;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color: #E8E8E8;
+    z-index: 1;
+}
+
+.desc{
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    color: #989898;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn{
+    background-color: transparent;
+    font-size: 17px;
+    padding: 10px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    border: 1px solid rgb(8, 253, 216);
+    color: rgb(8, 253, 216);
+    margin-top: 22px;
+}
+
+.btn:hover{
+    background-color: rgb(8, 253, 216);
+    cursor: pointer;
+    color: black;
+}
+
+#bgimage{
+    position: absolute;
+    top: 37px;
+    left: 9px;
+    z-index: -1;
+}
+
+#bgimage img{
+    filter: blur(3px);
+}
+
+.data span{
+    visibility: hidden;
+    transition: 1s;
+    letter-spacing: -14px;
+    font-size: 55px;
+    cursor: default;
+}
+
+.data span:hover{
+    display: inline-block;
+    animation-name: dance;
+    animation-duration: 0.7s;
+}
+
+@keyframes dance{
+    0%{
+        transform: scale(0.6,1.7)
+    }
+    50%{
+        transform: scale(1.7,0.6)
+    }
+    75%{
+        transform: scale(0.6,1.7)
+    }
+}
+
+.emcls{
+    position: absolute;
+    color: #787878;
+}
+
+#em1{
+    left: 57px;
+    top: 55px;
+}
+
+#em2{
+    left: 109px;
+    top: 120px;
+}
+
+#em3{
+    left: 109px;
+    top: 552px;
+}
+
+#em4{
+    left: 57px;
+    top: 617px;
+}
+
+div.para{
+    width: 600px;
+    position: absolute;
+    top: 240px;
+    left: 105px;
+    color: white;
+    background-color: rgb(16,16,16,0.3);
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.para{
+    animation: fadein 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#tpstyle{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 450px;
+    position: absolute;
+    right: 334px;
+    top: -27px;
+    letter-spacing: -127px;
+    transform: rotate(-20deg);
+    animation: fill 10s ease-in-out forwards;
+}
+
+@keyframes fill{
+    from{
+        color: white;
+    }
+    to{
+        color: rgb(8, 253, 216);
+        text-shadow: 10px 10px #ff6666;
+    }
+}
+
+div.myimage{
+    position: absolute;
+    right: 60px;
+    top: 65px;
+}
+
+.myimage img{
+    max-width: 500px;
+    height: auto;
+    animation: zoom 20s linear forwards;
+    box-shadow: 5px 5px 5px rgb(8, 253, 216);
+}
+
+@keyframes zoom{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.7;
+        filter: grayscale(100%);
+    }
+}
+
+div.form{
+    position: absolute;
+    left: 114px;
+    top: 217px;
+    color: white;
+}
+
+input{
+    width: 400px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding: 14px;
+    margin: 5px 0px 5px 0;
+    background-color: #404040;
+}
+
+textarea{
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding: 14px;
+    background-color: #404040;
+    margin-top: 5px;
+    width: 400px;
+    height: 144px;
+    resize: none;
+}
+
+.cbtn{
+    float: right;
+    background-color: transparent;
+    font-size: 17px;
+    padding: 5px 15px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    border: 1px solid rgb(8, 253, 216);
+    color: rgb(8, 253, 216);
+}
+
+.cbtn:hover{
+    background-color: rgb(8, 253, 216);
+    cursor: pointer;
+    color: black;
+}
+
+.progress{
+    width: 70%;
+    position: absolute;
+    top: 240px;
+    left: 110px;
+}
+
+.progress h6{
+    color: white;
+    font-size: 20px;
+}
+
+.bar{
+    width: 100%;
+    border: 1px solid rgb(8, 253, 216);
+    height: 20px;
+    margin: 5px 0 15px 0;
+}
+
+.barstyle{
+    width: 0%;
+    background-color: #ff6666;
+    height: 18px;
+}
+
+
+
+#bar1{
+    animation: bar1 3s linear 2s forwards;
+}
+
+@keyframes bar1{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%;
+    }
+}
+#bar2{
+    animation: bar2 3s linear 2s forwards;
+}
+@keyframes bar2{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 85%;
+    }
+}
+#bar3{
+    animation: bar3 3s linear 2s forwards;
+}
+@keyframes bar3{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+#bar4{
+    animation: bar4 3s linear 2s forwards;
+}
+@keyframes bar4{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+#bar5{
+    animation: bar5 3s linear 2s forwards;
+}
+@keyframes bar5{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 75%;
+    }
+}
+
+.workbanner{
+    background-color: #101010;
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    top: 247px;
+    left: 112px;
+}
+
+.workbanner span{
+    color: #ff6666;
+    font-size: 66px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    animation: hidenshow 0.7s linear infinite alternate ;
+}
+
+@keyframes hidenshow{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.workbanner div{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* --------------------------------------------Using media queries----------------------------------------------- */
+
+@media only screen and (max-width: 600px) and (min-width:410px){
+    #logo h1{
+        font-size: 26px;
+    }
+
+    #menubar{
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    nav{
+        position: fixed;
+        top: 38px;
+        width: 100%;
+        height: 50px;
+        background-color: #1f1f1f;
+        z-index: 5;
+        left: 100%;
+        transition: left 0.5s linear;
+    }
+    
+    .slider{
+        left: 0%;
+    }
+    #navbar{
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    #navbar a{
+        font-size: 20px;
+        padding: 9px;
+    }
+
+    .data{
+        position: absolute;
+        top: 186px;
+        left: 25px;
+        z-index: 2;
+    }
+    .data span{
+        letter-spacing: -13px;
+        font-size: 42px;
+        text-shadow: 1px 1px black;
+        line-height: 62px;
+    }
+    .desc{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    
+    .btn{
+        font-size: 17px;
+        letter-spacing: 2px;
+        margin-top: 30px;
+    }
+    #tpstyle{
+        font-size: 367px;
+        position: absolute;
+        right: 122px;
+        top: 53px;
+        letter-spacing: -96px;
+    }
+    @keyframes fill{
+        from{
+            color: #181818;
+        }
+        to{
+            color: rgb(8, 253, 216);
+            text-shadow: 10px 10px #fd4c4c;
+        }
+    }
+    #em1{
+        left: 10px;
+        top: 110px;
+    }
+
+    #em2{
+        left: 58px;
+        top: 170px;
+    }
+
+    #em3{
+        left: 58px;
+        top: 565px;
+    }
+
+    #em4{
+        left: 10px;
+        top: 627px;
+    }
+
+/* Contact us --------------------------------------------------*/
+    div.form{
+        left: 30px;
+        top: 240px;
+        width: 86%;
+    }
+    
+    input{
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    /* contact us end ------------------------------------------*/
+    
+    /* My work -------------------------------------------------*/
+    .workbanner{
+        width: 87%;
+        top: 256px;
+        left: 25px;
+    }
+    /* My work ends --------------------------------------------*/
+
+
+    /* Skills --------------------------------------------*/
+    .progress {
+        width: 82%;
+        top: 250px;
+        left: 35px;
+    }
+    /* Skills Ends--------------------------------------------*/
+
+    /* About page ----------------------------------*/
+    div.para {
+        width: 92%;
+        top: 262px;
+        left: 18px;
+    }
+    div.para p{
+        text-align: justify;
+    }
+    div.myimage{
+        display: none;
+    }
+    /* About page ends ----------------------------------*/
+}
+
+@media only screen and (max-width: 409px) and (min-width:360px){
+    #logo h1{
+        font-size: 26px;
+    }
+
+    #menubar{
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    nav{
+        position: fixed;
+        top: 38px;
+        width: 100%;
+        height: 50px;
+        background-color: #1f1f1f;
+        z-index: 10;
+        left: 100%;
+        transition: left 0.5s linear;
+    }
+    
+    .slider{
+        left: 0%;
+    }
+    
+    
+    #navbar{
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: row;
+        overflow: hidden;
+        transition: all 1s linear;
+    }
+    
+    #navbar a{
+        font-size: 20px;
+        padding: 9px;
+    }
+
+    .data{
+        position: absolute;
+        top: 160px;
+        left: 10px;
+        z-index: 2;
+    }
+    .data span{
+        letter-spacing: -13px;
+        font-size: 38px;
+        text-shadow: 1px 1px black;
+        line-height: 62px;
+    }
+    .desc{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    
+    .btn{
+        font-size: 17px;
+        letter-spacing: 2px;
+        margin-top: 30px;
+    }
+    #tpstyle{
+        font-size: 330px;
+        position: absolute;
+        right: 122px;
+        top: 53px;
+        letter-spacing: -96px;
+    }
+    @keyframes fill{
+        from{
+            color: #181818;
+        }
+        to{
+            color: rgb(8, 253, 216);
+            text-shadow: 10px 10px #fd4c4c;
+        }
+    }
+    #em1{
+        left: 10px;
+        top: 94px;
+    }
+
+    #em2{
+        left: 58px;
+        top: 140px;
+    }
+
+    #em3{
+        left: 58px;
+        top: 566px;
+    }
+
+    #em4{
+        left: 10px;
+        top: 610px;
+    }
+
+/* Contact us --------------------------------------------------*/
+    div.form{
+        left: 18px;
+        top: 218px;
+        width: 90%;
+    }
+    
+    input{
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    /* contact us end ------------------------------------------*/
+    
+    /* My work -------------------------------------------------*/
+    .workbanner{
+        width: 90%;
+        top: 240px;
+        left: 15px;
+    }
+    /* My work ends --------------------------------------------*/
+
+
+    /* Skills --------------------------------------------*/
+    .progress {
+        width: 90%;
+        top: 235px;
+        left: 18px;
+    }
+    /* Skills Ends--------------------------------------------*/
+
+    /* About page ----------------------------------*/
+    div.para {
+        width: 92%;
+        top: 252px;
+        left: 10px;
+    }
+
+    div.para p{
+        text-align: justify;
+    }
+    div.myimage{
+        display: none;
+    }
+    /* About page ends ----------------------------------*/
+}
+
+@media only screen and (max-width: 359px) and (min-width:320px){
+    #logo h1{
+        font-size: 20px;
+    }
+
+    #menubar{
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    nav{
+        position: fixed;
+        top: 30px;
+        width: 100%;
+        height: 50px;
+        background-color: #1f1f1f;
+        z-index: 10;
+        left: 100%;
+        transition: left 0.5s linear;
+    }
+    
+    .slider{
+        left: 0%;
+    }
+    #navbar{
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    #navbar a{
+        font-size: 20px;
+        padding: 9px;
+    }
+
+    .data{
+        position: absolute;
+        top: 113px;
+        left: 10px;
+        z-index: 2;
+    }
+    .data span{
+        letter-spacing: -13px;
+        font-size: 34px;
+        text-shadow: 1px 1px black;
+        line-height: 62px;
+    }
+    .desc{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    
+    .btn{
+        font-size: 17px;
+        letter-spacing: 2px;
+        margin-top: 30px;
+    }
+    #tpstyle{
+        font-size: 275px;
+        position: absolute;
+        right: 101px;
+        top: 86px;
+        letter-spacing: -72px;
+}
+    @keyframes fill{
+        from{
+            color: #181818;
+        }
+        to{
+            color: rgb(8, 253, 216);
+            text-shadow: 10px 10px #fd4c4c;
+        }
+    }
+    #em1{
+        left: 10px;
+        top: 44px;
+    }
+
+    #em2{
+        left: 58px;
+        top: 90px;
+    }
+
+    #em3{
+        left: 58px;
+        top: 500px;
+    }
+
+    #em4{
+        left: 10px;
+        top: 540px;
+    }
+
+/* Contact us --------------------------------------------------*/
+    div.form{
+        left: 14px;
+        top: 173px;
+        width: 90%;
+    }
+    
+    input{
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    /* contact us end ------------------------------------------*/
+    
+    /* My work -------------------------------------------------*/
+    .workbanner{
+        width: 90%;
+        top: 182px;
+        left: 13px;
+    }
+    /* My work ends --------------------------------------------*/
+
+
+    /* Skills --------------------------------------------*/
+    .progress {
+        width: 90%;
+        top: 184px;
+        left: 18px;
+    }
+    /* Skills Ends--------------------------------------------*/
+
+    /* About page ----------------------------------*/
+    div.para {
+        width: 92%;
+        top: 188px;
+        left: 10px;
+    }
+
+    div.para p{
+        text-align: justify;
+    }
+    div.myimage{
+        display: none;
+    }
+    /* About page ends ----------------------------------*/
+}
+
+@media only screen and (max-width: 319px){
+    #logo h1{
+        font-size: 12px;
+    }
+
+    #menubar{
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    nav{
+        position: fixed;
+        top: 30px;
+        width: 100%;
+        height: 50px;
+        background-color: #1f1f1f;
+        z-index: 1;  
+        left: 100%;
+        transition: left 0.5s linear;
+    }
+    
+    .slider{
+        left: 0%;
+    }
+    
+    #navbar{
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    #navbar a{
+        font-size: 20px;
+        padding: 9px;
+    }
+
+    .data{
+        position: absolute;
+        top: 113px;
+        left: 10px;
+        z-index: 2;
+    }
+    .data span{
+        letter-spacing: -12px;
+        font-size: 18px;
+        text-shadow: 1px 1px black;
+        line-height: 44px;
+    }
+    .desc{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    
+    .btn{
+        font-size: 17px;
+        letter-spacing: 2px;
+        margin-top: 30px;
+    }
+    #tpstyle{
+        font-size: 173px;
+        position: absolute;
+        right: 60px;
+        top: 86px;
+        letter-spacing: -42px;
+}
+    @keyframes fill{
+        from{
+            color: #181818;
+        }
+        to{
+            color: rgb(8, 253, 216);
+            text-shadow: 10px 10px #fd4c4c;
+        }
+    }
+    #em1{
+        left: 10px;
+        top: 44px;
+    }
+
+    #em2{
+        left: 58px;
+        top: 90px;
+    }
+
+    #em3{
+        left: 58px;
+        top: 500px;
+    }
+
+    #em4{
+        left: 10px;
+        top: 540px;
+    }
+
+/* Contact us --------------------------------------------------*/
+    div.form{
+        left: 14px;
+        top: 173px;
+        width: 90%;
+    }
+    
+    input{
+        width: 100%;
+        height: 36px;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    /* contact us end ------------------------------------------*/
+    
+    /* My work -------------------------------------------------*/
+    .workbanner{
+        width: 90%;
+        top: 182px;
+        left: 13px;
+    }
+    .workbanner span {
+        font-size: 46px;
+    }
+    /* My work ends --------------------------------------------*/
+
+
+    /* Skills --------------------------------------------*/
+    .progress {
+        width: 90%;
+        top: 184px;
+        left: 12px;
+    }
+    /* Skills Ends--------------------------------------------*/
+
+    /* About page ----------------------------------*/
+    div.para {
+        width: 92%;
+        top: 188px;
+        left: 10px;
+    }
+
+    div.para p{
+        text-align: justify;
+        font-size: 14px;
+    }
+    div.myimage{
+        display: none;
+    }
+    /* About page ends ----------------------------------*/
+}
+
+@media only screen and (max-width: 800px) and (min-width:601px){
+    #logo h1{
+        font-size: 35px;
+    }
+
+    #menubar{
+        display: block;
+        cursor: pointer;
+        font-size: 35px;
+    }
+
+    
+    nav{
+        position: fixed;
+        top: 53px;
+        width: 100%;
+        height: 50px;
+        background-color: #1f1f1f;
+        z-index: 10;
+        left: 100%;
+        transition: left 0.5s linear;
+    }
+    
+    .slider{
+        left: 0%;
+    }
+
+    #navbar{
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    #navbar a{
+        font-size: 24px;
+        padding: 9px;
+    }
+
+    .data{
+        position: absolute;
+        top: 186px;
+        left: 25px;
+        z-index: 2;
+    }
+    .data span{
+        letter-spacing: -10px;
+        font-size: 55px;
+        text-shadow: 1px 1px black;
+        line-height: 80px;
+    }
+    .desc{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    
+    .btn{
+        font-size: 17px;
+        letter-spacing: 2px;
+        margin-top: 30px;
+    }
+    #tpstyle{
+        font-size: 367px;
+        position: absolute;
+        right: 122px;
+        top: 53px;
+        letter-spacing: -96px;
+    }
+    @keyframes fill{
+        from{
+            color: #181818;
+        }
+        to{
+            color: rgb(8, 253, 216);
+            text-shadow: 10px 10px #fd4c4c;
+        }
+    }
+    #em1{
+        left: 10px;
+        top: 110px;
+    }
+
+    #em2{
+        left: 58px;
+        top: 170px;
+    }
+
+    #em3{
+        left: 58px;
+        top: 647px;
+    }
+
+    #em4{
+        left: 10px;
+        top: 717px;
+    }
+
+/* Contact us --------------------------------------------------*/
+    div.form{
+        left: 30px;
+        top: 277px;
+        width: 86%;
+    }
+    
+    input{
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    /* contact us end ------------------------------------------*/
+    
+    /* My work -------------------------------------------------*/
+    .workbanner{
+        width: 87%;
+        top: 300px;
+        left: 25px;
+    }
+    /* My work ends --------------------------------------------*/
+
+
+    /* Skills --------------------------------------------*/
+    .progress {
+        width: 82%;
+        top: 293px;
+        left: 35px;
+    }
+    /* Skills Ends--------------------------------------------*/
+
+    /* About page ----------------------------------*/
+    div.para {
+        width: 92%;
+        top: 295px;
+        left: 18px;
+    }
+    div.para p{
+        text-align: justify;
+        font-size: 26px;    
+    }
+        div.myimage {
+            display: none;
+        }
+    /* About page ends ----------------------------------*/
+}

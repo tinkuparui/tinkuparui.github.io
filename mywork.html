@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tinku Parui</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8dfb5e496a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="flexi">
+        <div id="logo">
+            <h1 onclick="redirecthome()">THE TINKU PARUI</h1>
+        </div>
+        <div id="menubar" onclick="shownav()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <nav id="navblock" class="flexi">
+        <div id="navbar" class="flexi">
+            <a href="index.html" id="home" onmouseenter="showspan(this, txt='HOME')"
+                onmouseleave="showfas(this, txt='home')"><i class="fas fa-home"></i></a>
+            <a href="about.html" id="about" onmouseenter="showspan(this, txt='ABOUT')"
+                onmouseleave="showfas(this, txt='user')"><i class="fas fa-user"></i></a>
+            <a href="skills.html" id="skill" onmouseenter="showspan(this, txt='SKILLS')"
+                onmouseleave="showfas(this, txt='cogs')"><i class="fas fa-cogs"></i></a>
+            <a href="mywork.html" id="mywork" onmouseenter="showspan(this, txt='PROJECTS')"
+                onmouseleave="showfas(this, txt='eye')"><i class="fas fa-eye active"></i></a>
+            <a href="contact.html" id="contact" onmouseenter="showspan(this, txt='CONTACT')"
+                onmouseleave="showfas(this, txt='address-card')"><i class="fas fa-address-card "></i></a>
+        </div>
+    </nav>
+    <div class="data" style="color: rgb(8, 253, 216);">
+
+        <span>M</span>
+        <span>y</span>&nbsp;
+        <span>P</span>
+        <span>r</span>
+        <span>o</span>
+        <span>j</span>
+        <span>e</span>
+        <span>c</span>
+        <span>t</span>
+        <span>s</span>
+    </div>
+
+    <div class="workbanner">
+        <div>
+            <span>Work in Progress</span>
+        </div>
+    </div>
+
+    <em id="em1" class="emcls">&lt;html&gt;</em>
+    <em id="em2" class="emcls">&lt;body&gt;</em>
+    <em id="em3" class="emcls">&lt;/body&gt;</em>
+    <em id="em4" class="emcls">&lt;/html&gt;</em>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
