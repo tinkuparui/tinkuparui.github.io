@@ -262,19 +262,18 @@ div.contact{
 .contact > div{
     margin: 10px 0;
     padding: 10px;
-    background-color: #494949;
+    background-color: #f3f0f0;
     border-radius: 5px;
 }
 
 .ciconsize{
     font-size: 35px;
-    padding: 5px 0;
-    color: #ff6666;
+    color: #0077b5;
 }
 
 .cspanstyle{
     font-size: 20px;
-    color: white;
+    color: blue;
 }
 
 
